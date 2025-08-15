@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import sahithiHeadshot from "@/assets/sahithi-headshot.jpg";
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -33,9 +32,8 @@ const About = () => {
       className="py-20 bg-background"
     >
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-          {/* Text Content */}
-          <div className={`space-y-6 ${isVisible ? 'animate-fade-in-left' : 'opacity-0'}`}>
+        <div className="max-w-4xl mx-auto text-center">
+          <div className={`space-y-6 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
               About <span className="text-secondary">Me</span>
             </h2>
@@ -76,22 +74,6 @@ const About = () => {
               <div className="px-4 py-2 bg-success/10 border border-success/20 rounded-full text-success font-medium">
                 Open Source Enthusiast
               </div>
-            </div>
-          </div>
-
-          {/* Profile Image */}
-          <div className={`flex justify-center lg:justify-end ${isVisible ? 'animate-fade-in-right' : 'opacity-0'}`}>
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-accent rounded-2xl blur-xl opacity-20 animate-glow-pulse"></div>
-              <div className="relative bg-gradient-card rounded-2xl p-2 shadow-large">
-                <img
-                  src={sahithiHeadshot}
-                  alt="Sahithi Nandikula - Software Engineer"
-                  className="w-80 h-80 object-cover rounded-xl shadow-medium"
-                />
-              </div>
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-secondary/20 rounded-full blur-2xl animate-pulse"></div>
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-primary/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
             </div>
           </div>
         </div>
