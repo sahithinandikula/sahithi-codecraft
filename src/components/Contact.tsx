@@ -241,7 +241,16 @@ const Contact = () => {
                 <p className="mb-4 opacity-90">
                   Let's build something amazing together!
                 </p>
-                <Button variant="glass" size="lg">
+                <Button 
+                  variant="glass" 
+                  size="lg"
+                  onClick={() => {
+                    const contactForm = document.querySelector('form');
+                    contactForm?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    const nameInput = document.querySelector('input[name="name"]') as HTMLInputElement;
+                    nameInput?.focus();
+                  }}
+                >
                   Start a Project
                 </Button>
               </CardContent>
