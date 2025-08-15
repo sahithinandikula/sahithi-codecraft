@@ -54,12 +54,12 @@ const Hero = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16 animate-fade-in-right">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-fade-in-right">
             <Button 
               variant="hero" 
               size="xl"
               onClick={() => scrollToSection("projects")}
-              className="min-w-48"
+              className="min-w-44"
             >
               View My Work
             </Button>
@@ -67,9 +67,19 @@ const Hero = () => {
               variant="glass" 
               size="xl"
               onClick={() => scrollToSection("contact")}
-              className="min-w-48"
+              className="min-w-44"
             >
               Contact Me
+            </Button>
+            <Button 
+              variant="outline" 
+              size="xl"
+              className="min-w-44"
+              asChild
+            >
+              <a href="/sahithi-resume.pdf" download="Sahithi_Nandikula_Resume.pdf">
+                Download Resume
+              </a>
             </Button>
           </div>
 

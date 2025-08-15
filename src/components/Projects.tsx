@@ -8,7 +8,7 @@ import wanderlustProject from "@/assets/wanderlust-project.jpg";
 
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [filter, setFilter] = useState("All");
+  
   const projectsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -55,11 +55,6 @@ const Projects = () => {
     }
   ];
 
-  const filters = ["All", "ML Projects", "Web Apps"];
-
-  const filteredProjects = filter === "All" 
-    ? projects 
-    : projects.filter(project => project.category === filter);
 
   return (
     <section 
@@ -72,27 +67,13 @@ const Projects = () => {
           <h2 className={`text-4xl md:text-5xl font-bold text-foreground mb-4 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
             Featured <span className="text-secondary">Projects</span>
           </h2>
-          <p className={`text-xl text-muted-foreground max-w-2xl mx-auto mb-8 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+          <p className={`text-xl text-muted-foreground max-w-2xl mx-auto ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
             Showcasing innovative solutions built with modern technologies
           </p>
-
-          {/* Filter Buttons */}
-          <div className={`flex justify-center gap-4 flex-wrap ${isVisible ? 'animate-scale-in' : 'opacity-0'}`}>
-            {filters.map((filterOption) => (
-              <Button
-                key={filterOption}
-                variant={filter === filterOption ? "secondary" : "outline"}
-                onClick={() => setFilter(filterOption)}
-                className="transition-all duration-300"
-              >
-                {filterOption}
-              </Button>
-            ))}
-          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {filteredProjects.map((project, index) => (
+          {projects.map((project, index) => (
             <Card 
               key={index}
               className={`group overflow-hidden hover:shadow-large transition-all duration-500 transform hover:scale-[1.02] border-0 bg-gradient-card ${
