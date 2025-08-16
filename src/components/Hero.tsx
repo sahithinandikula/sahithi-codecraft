@@ -84,7 +84,7 @@ const Hero = () => {
           </div>
 
           {/* Social Links */}
-          <div className="flex justify-center gap-6 mb-12 animate-scale-in">
+          <div className="flex justify-center gap-6 mb-20 animate-scale-in">
             <a 
               href="https://github.com/sahithi" 
               target="_blank" 
