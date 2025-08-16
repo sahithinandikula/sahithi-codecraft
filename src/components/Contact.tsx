@@ -258,6 +258,15 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      
+      {/* Footer */}
+      <div className="border-t border-border/20 mt-16 pt-8">
+        <div className="container mx-auto px-6">
+          <p className="text-center text-muted-foreground text-sm">
+            Built with <span className="text-destructive text-base">♥</span> by Sahithi Nandikula
+          </p>
+        </div>
+      </div>
     </section>
   );
 };
