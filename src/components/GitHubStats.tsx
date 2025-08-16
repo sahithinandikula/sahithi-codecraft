@@ -31,28 +31,28 @@ const GitHubStats = () => {
     {
       icon: <Github className="w-8 h-8" />,
       label: "Total Repositories",
-      value: "25+",
+      value: "12",
       color: "text-primary",
       bgColor: "bg-primary/10"
     },
     {
       icon: <GitBranch className="w-8 h-8" />,
       label: "Pull Requests",
-      value: "25+",
+      value: "8",
       color: "text-secondary",
       bgColor: "bg-secondary/10"
     },
     {
       icon: <Star className="w-8 h-8" />,
       label: "Stars Earned",
-      value: "15+",
+      value: "3",
       color: "text-accent",
       bgColor: "bg-accent/10"
     },
     {
       icon: <Users className="w-8 h-8" />,
       label: "Followers",
-      value: "50+",
+      value: "5",
       color: "text-success",
       bgColor: "bg-success/10"
     }
