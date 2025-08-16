@@ -1,0 +1,129 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+>>
+>>
+>>
+endobj
+
+4 0 obj
+<<
+/Length 1400
+>>
+stream
+BT
+/F1 24 Tf
+50 720 Td
+(SAHITHI NANDIKULA) Tj
+0 -40 Td
+/F1 14 Tf
+(Aspiring Software Engineer | Full-Stack Developer | Open Source Contributor) Tj
+0 -30 Td
+(Email: sahithinandikula05@gmail.com) Tj
+0 -20 Td
+(GitHub: github.com/sahithi | LinkedIn: linkedin.com/in/sahithi-nandikula) Tj
+
+0 -40 Td
+/F1 16 Tf
+(EDUCATION) Tj
+0 -25 Td
+/F1 12 Tf
+(B.Tech in Computer Science) Tj
+0 -15 Td
+(Indur Institute of Engineering and Technology) Tj
+
+0 -35 Td
+/F1 16 Tf
+(EXPERIENCE) Tj
+0 -25 Td
+/F1 12 Tf
+(Campus Ambassador @ GSSOC'25) Tj
+0 -15 Td
+(• Promoted open-source culture and guided 50+ peers in Git/GitHub) Tj
+
+0 -20 Td
+(Project Admin @ GSSOC 2025) Tj
+0 -15 Td
+(• Led ML project with 4 stars & 12 forks in 1 week) Tj
+
+0 -20 Td
+(Open Source Contributor @ GSSOC 2024) Tj
+0 -15 Td
+(• Contributed 25+ PRs in React/Tailwind projects) Tj
+
+0 -35 Td
+/F1 16 Tf
+(PROJECTS) Tj
+0 -25 Td
+/F1 12 Tf
+(Sneaker Price Prediction using ML) Tj
+0 -15 Td
+(• Python, Django, MySQL, PyTorch | ~30% average error) Tj
+
+0 -20 Td
+(Wanderlust Travel Accommodation Platform) Tj
+0 -15 Td
+(• React, Node.js, Tailwind, MySQL | Authentication & Reviews) Tj
+
+0 -35 Td
+/F1 16 Tf
+(SKILLS) Tj
+0 -25 Td
+/F1 12 Tf
+(Languages: Java, Python, C, C++, JavaScript, HTML, CSS) Tj
+0 -15 Td
+(Frameworks: React, Node.js, Django, Bootstrap, Tailwind) Tj
+0 -15 Td
+(Databases: MySQL, MongoDB) Tj
+0 -15 Td
+(Tools: Git, GitHub, PyTorch) Tj
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+xref
+0 6
+0000000000 65535 f 
+0000000010 00000 n 
+0000000053 00000 n 
+0000000110 00000 n 
+0000000294 00000 n 
+0000001748 00000 n 
+trailer
+<<
+/Size 6
+/Root 1 0 R
+>>
+startxref
+1825
+%%EOF
