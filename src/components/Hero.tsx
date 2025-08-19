@@ -77,7 +77,11 @@ const Hero = () => {
               className="min-w-44"
               asChild
             >
-              <a href="/sahithi-resume.pdf" download="Sahithi_Nandikula_Resume.pdf">
+              <a 
+                href="https://drive.google.com/file/d/1g0XotK3ev8B6Sq7ifGT5ZsJJXzhvoXI3/view?usp=drivesdk" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
                 Download Resume
               </a>
             </Button>
