@@ -26,40 +26,85 @@ const Certifications = () => {
 
   const certifications = [
     {
-      name: "AWS Certified Cloud Practitioner",
-      organization: "Amazon Web Services (AWS)",
-      dateIssued: "March 2024",
-      expirationDate: "March 2027",
-      credentialId: "AWS-CCP-2024-001",
-      link: "https://aws.amazon.com/certification/",
-      status: "Active"
+      name: "Hackathon Certificate",
+      organization: "Google Developers Group Hyderabad",
+      dateIssued: "August 2025",
+      type: "Certificate of Participation",
+      skills: [],
+      credentialId: null,
+      link: null
     },
     {
-      name: "Google Analytics Certified",
-      organization: "Google",
-      dateIssued: "January 2024",
-      expirationDate: "January 2026",
-      credentialId: "GA-CERT-2024-002",
-      link: "https://skillshop.exceedlms.com/student/catalog",
-      status: "Active"
+      name: "Code For Bharat Season 2",
+      organization: "United Latino Students Association",
+      dateIssued: "June 2025",
+      type: "Certificate",
+      skills: [],
+      credentialId: "e78d90e0-9b4e-4545-b3f8-c8564391e908",
+      link: "#"
     },
     {
-      name: "Microsoft Azure Fundamentals",
-      organization: "Microsoft",
-      dateIssued: "November 2023",
-      expirationDate: "No Expiration",
-      credentialId: "AZ-900-2023-003",
-      link: "https://docs.microsoft.com/en-us/learn/certifications/",
-      status: "Active"
+      name: "Full Stack Developer",
+      organization: "Apna College",
+      dateIssued: "January 2025",
+      type: "Certificate",
+      skills: [],
+      credentialId: null,
+      link: null
     },
     {
-      name: "Certified Scrum Master (CSM)",
-      organization: "Scrum Alliance",
-      dateIssued: "September 2023",
-      expirationDate: "September 2025",
-      credentialId: "CSM-2023-004",
-      link: "https://www.scrumalliance.org/",
-      status: "Active"
+      name: "Contribute to Open Source",
+      organization: "Microsoft Learning",
+      dateIssued: "December 2024",
+      type: "Certificate",
+      skills: [],
+      credentialId: null,
+      link: "#"
+    },
+    {
+      name: "Contributor",
+      organization: "GirlScript Summer of Code",
+      dateIssued: "August 2024",
+      type: "Certificate",
+      skills: ["Node.js", "GitHub", "CSS", "Bootstrap", "HTML5", "TypeScript", "React.js", "Git", "JavaScript"],
+      credentialId: null,
+      link: null
+    },
+    {
+      name: "Open Source Contributor",
+      organization: "Social Summer of Code",
+      dateIssued: "August 2024",
+      type: "Certificate of Participation",
+      skills: [],
+      credentialId: null,
+      link: null
+    },
+    {
+      name: "Participant in Myntra WeForShe (HackerRamp)",
+      organization: "Myntra",
+      dateIssued: "August 2024",
+      type: "Certificate of Participation (Team Code Warriors)",
+      skills: ["Web Development"],
+      credentialId: null,
+      link: null
+    },
+    {
+      name: "Generative AI",
+      organization: "NVIDIA",
+      dateIssued: "May 2024",
+      type: "Certificate",
+      skills: ["Generative AI"],
+      credentialId: null,
+      link: null
+    },
+    {
+      name: "Introduction to Python",
+      organization: "Sololearn",
+      dateIssued: "May 2024",
+      type: "Certificate",
+      skills: ["Python"],
+      credentialId: null,
+      link: null
     }
   ];
 
@@ -86,7 +131,7 @@ const Certifications = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certifications.map((cert, index) => (
             <Card
               key={index}
@@ -96,62 +141,72 @@ const Certifications = () => {
                   : "opacity-0 translate-y-10"
               }`}
               style={{
-                transitionDelay: isVisible ? `${index * 150}ms` : "0ms"
+                transitionDelay: isVisible ? `${index * 100}ms` : "0ms"
               }}
             >
-              <CardHeader className="pb-4">
+              <CardHeader className="pb-3">
                 <div className="flex items-start justify-between">
                   <div className="flex-1">
-                    <CardTitle className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors duration-300 flex items-start gap-2">
+                    <CardTitle className="text-lg font-bold text-foreground group-hover:text-primary transition-colors duration-300 flex items-start gap-2 leading-tight">
                       <Award className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                       {cert.name}
                     </CardTitle>
-                    <CardDescription className="flex items-center gap-2 mt-2 text-muted-foreground">
+                    <CardDescription className="flex items-center gap-2 mt-2 text-muted-foreground italic">
                       <Building className="w-4 h-4" />
                       {cert.organization}
                     </CardDescription>
                   </div>
-                  <Badge 
-                    variant="secondary" 
-                    className="bg-success/10 text-success border-success/20 ml-2"
-                  >
-                    {cert.status}
-                  </Badge>
                 </div>
               </CardHeader>
 
               <CardContent className="space-y-4">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4 text-primary" />
-                    <div>
-                      <p className="font-medium text-foreground">Issued</p>
-                      <p className="text-muted-foreground">{cert.dateIssued}</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4 text-secondary" />
-                    <div>
-                      <p className="font-medium text-foreground">Expires</p>
-                      <p className="text-muted-foreground">{cert.expirationDate}</p>
-                    </div>
+                <div className="flex items-center gap-2 text-sm">
+                  <Calendar className="w-4 h-4 text-primary" />
+                  <div>
+                    <p className="font-medium text-foreground">Issued: {cert.dateIssued}</p>
+                    {cert.type && (
+                      <p className="text-muted-foreground text-xs mt-1">{cert.type}</p>
+                    )}
                   </div>
                 </div>
 
-                <div className="pt-2 border-t border-border/50">
-                  <p className="text-xs text-muted-foreground mb-2">
-                    Credential ID: <span className="font-mono">{cert.credentialId}</span>
-                  </p>
-                  <a
-                    href={cert.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm text-primary hover:text-primary/80 transition-colors duration-200 font-medium"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    View Credential
-                  </a>
-                </div>
+                {cert.skills.length > 0 && (
+                  <div className="space-y-2">
+                    <p className="text-sm font-medium text-foreground">Skills:</p>
+                    <div className="flex flex-wrap gap-1">
+                      {cert.skills.map((skill, skillIndex) => (
+                        <Badge
+                          key={skillIndex}
+                          variant="outline"
+                          className="text-xs bg-secondary/20 text-secondary border-secondary/30"
+                        >
+                          {skill}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {(cert.link || cert.credentialId) && (
+                  <div className="pt-2 border-t border-border/50">
+                    {cert.credentialId && (
+                      <p className="text-xs text-muted-foreground mb-2">
+                        Credential ID: <span className="font-mono">{cert.credentialId}</span>
+                      </p>
+                    )}
+                    {cert.link && (
+                      <a
+                        href={cert.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-sm text-primary hover:text-primary/80 transition-colors duration-200 font-medium"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        Show Credential
+                      </a>
+                    )}
+                  </div>
+                )}
               </CardContent>
             </Card>
           ))}
