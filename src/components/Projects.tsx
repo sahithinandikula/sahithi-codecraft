@@ -39,7 +39,7 @@ const Projects = () => {
       image: sneakerProject,
       technologies: ["Python", "Django", "MySQL", "PyTorch", "Machine Learning"],
       category: "ML Projects",
-      github: "https://github.com/sahithi/sneaker-prediction",
+      github: "https://github.com/sahithinandikula/Sneaker-price-prediction.git",
       demo: "https://sneaker-prediction-demo.com",
       stats: { accuracy: "~70%", dataset: "10K+ sneakers" }
     },
@@ -49,7 +49,7 @@ const Projects = () => {
       image: wanderlustProject,
       technologies: ["React", "Node.js", "Tailwind CSS", "MySQL", "Express"],
       category: "Web Apps",
-      github: "https://github.com/sahithi/wanderlust",
+      github: "https://github.com/sahithinandikula/major-project.git",
       demo: "https://wanderlust-platform.com",
       stats: { users: "500+", listings: "200+" }
     }
